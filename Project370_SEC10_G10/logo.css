@@ -1,0 +1,36 @@
+.big{
+    border: 2px solid #00D2FC;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+}
+.big .smol{
+    background-color: #00D2FC;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+p{
+    text-shadow: black 7px 2px 0px;
+    rotate: -12deg;
+    text-align: center;
+    line-height: 48px;
+    position: absolute;
+    top: 83px;
+    left: 527px;
+    font-family: 'Leckerli One', cursive;
+    color: white;
+	font-size: 60px;
+	-webkit-text-stroke: 2px black;
+}
+/* font-family: 'Leckerli One', cursive;
+font-family: 'Molle', cursive;
+font-family: 'Pacifico', cursive; */
+.shadow{
+    border: 2px solid black;
+    
+}

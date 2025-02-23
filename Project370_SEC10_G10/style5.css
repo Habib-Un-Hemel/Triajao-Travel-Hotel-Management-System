@@ -1,0 +1,111 @@
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Monofett', cursive;
+font-family: 'Sono', sans-serif;
+font-family: 'Sonsie One', cursive;
+font-family: 'Titillium Web', sans-serif; */
+*{
+    margin: 0;
+    padding:0;
+}
+.options, .Name, .acc{
+    z-index: 2;
+}
+.acc{
+    font-family: 'Sono', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.acc i{
+    margin-right: 10px;
+}
+.Name{
+    color: white;
+    font-size: 30px;
+    font-family: 'Berkshire Swash', cursive;
+    transition: 0.5s;
+    text-shadow: 2px 2px 7px black;
+}
+.Name a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    position: relative;
+    margin: 10px 30px;
+    border: 1px solid transnparent;
+    border-radius: 35px;
+    background-image: url(10.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0px 35px;
+    overflow: hidden;
+}
+nav::after{
+    content: "";
+    background-image: linear-gradient(transparent, black);
+    height: 100%;
+    width: 100%;
+    opacity: 82%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+.options{
+    display: flex;
+    width: 727px;
+    justify-content: space-between;
+    position: absolute;
+    left: 298px;
+}
+.options .active{
+    border: 2px white solid;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 7px black;
+}
+button{
+    border: 1px solid transparent;
+    border-radius: 6px 6px 0px 0px;
+    font-family: 'Sono', sans-serif;
+    font-weight: 600;
+    margin: 0px 20px;
+    color: white;
+    font-size: 13px;    
+    position:relative;
+    height: 31px;
+    width: 144px;
+    background-color: transparent;
+    z-index: 1;
+    transition:0.5s;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+button:after{
+    border-bottom: 4px solid white;
+    z-index: -1;
+    content: "";
+    height: 96%;
+    width:100%;
+    position: absolute;
+    right: -110%;
+    top: 0%;
+    /* background-color: white ; */
+    transition:0.5s;
+} 
+button:hover::after{
+    right: 0;
+}
+button:hover{
+    color: white;
+    /* border-bottom: 1px solid white; */
+    box-shadow: 1px 1px 7px black;
+}

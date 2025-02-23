@@ -1,0 +1,264 @@
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Monofett', cursive;
+font-family: 'Sono', sans-serif;
+font-family: 'Sonsie One', cursive;
+font-family: 'Titillium Web', sans-serif; */
+*{
+    margin:0;
+    padding:0;
+}
+.guide2{
+    top: -1%;
+    left: 60%;
+    height: 50px;
+    border-radius: 0px 0px 15px 15px;
+}
+.owner{
+    top: -1%;
+    left: 23%;
+    height: 50px;
+    border-radius: 0px 0px 15px 15px;
+}
+.guide2::after{
+    top: -100%;
+    right: 0%;
+}
+.guide2:hover::after{
+    top: 0%;
+}
+.owner::after{
+    top: -100%;
+    right: 0%;
+}
+.owner:hover::after{
+    top: 0%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.bus, .bus2, .bus3, .ani{
+    z-index: 2;
+}
+.pankha img{
+    z-index: 3;
+    position: absolute;
+    height: 104px;
+    width: 203px;
+    left: 0px;
+    bottom: 44px;
+    transform: rotate(0deg);
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: fan;
+}
+@keyframes fan {
+    from{
+        transform: translateX(-160px) rotate(0deg);
+    }
+    to{
+        transform: translateX(1126px) translateY(-556px) rotate(-20deg);
+    }
+}
+button i{
+    size: 40px;
+    margin-right: 10px;
+}
+.Name{
+    color: white;
+    font-size: 170px;
+    position: absolute;
+    font-family: 'Berkshire Swash', cursive;
+    left: 50px;
+    top:20px;
+    transition: 0.5s;
+    text-shadow: 2px 2px 7px black;
+}
+.bg{
+    /* margin: 3px 2px 0px 2px; */
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-position: center;
+    background-image: url(18.jpg);
+    background-size: cover;
+}
+.bg::after{
+    content: "";
+    background-image: linear-gradient(red, yellow);
+    height: 100%;
+    width: 100%;
+    opacity: 12%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+.Hotel{
+    top: 242px;
+    left: 325px;
+    z-index: 2;
+}
+.Tickets{
+    top: 342px;
+    left: 325px;
+    padding: 10px 20px;
+}
+.Guide{
+    top: 242px;
+    left: 50px;
+}
+.Review{
+    top: 342px;
+    left: 50px;
+}
+button{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    padding:10px 30px;
+    color: white;
+    font-size: 20px;    
+    position:absolute;
+    border-radius: 15px;
+    height: 74px;
+    width: 248px;
+    background-color: transparent;
+    border: 4px white solid;
+    z-index: 1;
+    transition:0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+button:after{
+    z-index: -1;
+    content: "";
+    height: 100%;
+    width:100%;
+    position: absolute;
+    right: -120%;
+    top: 0%;
+    background-color: white ;
+    transition:0.5s;
+}
+.dropdown{
+    z-index: -1;
+    content: "";
+    height: 100%;
+    width:100%;
+    position: absolute;
+    right: -120%;
+    top: 0%;
+    background-color: white ;
+    transition:0.5s;
+}
+button:hover::after{
+    right: 0;
+}
+button:hover{
+    color: black;
+    box-shadow: 3px 3px 7px black;
+}
+.Name a, .Hotel a, .Tickets a, .Guide a, .Review a, .owner a{
+    height: 100px;
+    color: white;
+    text-decoration: none;
+}
+.Hotel a:hover, .Tickets a:hover, .Guide a:hover, .Review a:hover, .owner a:hover{
+    color: black;
+}
+.bg .ani{
+    height: fit-content;
+    width: fit-content;
+    top:72px;
+    left:800px;
+    position: absolute;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    animation-name: rotate1;
+    transform: rotateX(0deg);
+}
+.bg .trans{
+    height: 400px;
+    width: auto;
+}
+.bg .bus{
+    height: fit-content;
+    width: fit-content;
+    top: 485px;
+    position: absolute;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    animation-name: translate2;
+    transform: translateX(320%) translateZ(10px);
+}
+.bg .bus2{
+    height: fit-content;
+    width: fit-content;
+    top: 485px;
+    position: absolute;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: translate3;
+    transform: translateX(-180%);
+}
+.bg .bus3{
+    height: fit-content;
+    width: fit-content;
+    top: 475px;
+    left: auto;
+    animation-delay: 2s;
+    position: absolute;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-name: translate4; 
+    transform: translateX(-180%);
+}
+.bg .bus2 img{
+    height:115px;
+    width: 307px;
+}
+.bg .bus img{
+    height:115px;
+    width: 307px;
+}
+.bg .bus3 img{
+    height: 125px;;
+    width: 339px;
+}
+@keyframes rotate1 {
+    from{
+        transform: rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg) ;
+    }
+}
+@keyframes translate2 {
+    from{
+        transform: translateX(320%) translateZ(10px);
+    }
+    to{
+        transform: translateX(-250%) translateZ(200px);
+    }
+}
+@keyframes translate3 {
+    from{
+        transform: translateX(-150%);
+    }
+    to{
+        transform: translateX(330%);
+    }
+}
+@keyframes translate4{
+    from{
+        transform: translateX(-150%);
+    }
+    to{
+        transform: translateX(300%);
+    }
+}
+
